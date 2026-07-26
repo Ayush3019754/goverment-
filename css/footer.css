@@ -1,0 +1,141 @@
+/* --- Footer Base Styling --- */
+.gov-footer {
+  background-color: #030a16; /* Dark background as in screenshot */
+  color: #ffffff;
+  padding: 40px 20px 20px 20px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.gov-footer *, 
+.gov-footer *::before, 
+.gov-footer *::after {
+  box-sizing: border-box;
+}
+
+.gov-footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* responsive and no overlap */
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-col h3 {
+  color: #ffcc00; /* Yellow headings */
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* --- Links Styling & Smooth Hover --- */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 15px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Link Hover Animation */
+.footer-col ul li a:hover {
+  color: #3ec3c5; /* Aqua/cyan shift on hover */
+  transform: translateX(8px); /* Smooth slide right, no overlap */
+}
+
+/* --- Social Icons Layout --- */
+.footer-social-container {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #1f2633; /* Dark grey circular background */
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+/* --- Individual Brand Color Hover Animations --- */
+.social-icon.facebook:hover {
+  background-color: #1877F2;
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+.social-icon.linkedin:hover {
+  background-color: #0A66C2;
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+.social-icon.twitter:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: scale(1.15);
+  border: 1px solid #333;
+}
+
+.social-icon.instagram:hover {
+  background: linear-gradient(45deg, #F9CE34 0%, #EE2A7B 50%, #6228d7 100%);
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+/* --- Bottom Copyright Bar & Live Clock --- */
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #101929;
+}
+
+.bottom-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #a0aec0;
+}
+
+#live-clock {
+  font-size: 13px;
+  color: #a0aec0;
+  font-weight: 500;
+}
